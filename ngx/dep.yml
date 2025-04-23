@@ -32,7 +32,7 @@ spec:
             memory: 256Mi
         #Persistent Volume r Persistant volume claim config
         volumeMounts:
-        - mountPath: /var/www/html
+        - mountPath: /var/wwww/html
           name: my-vol         
       volumes:
         - name: my-vol
