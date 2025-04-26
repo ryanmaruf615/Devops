@@ -1,0 +1,9 @@
+kind: Devopsbatch
+apiVersion: trainwithmaruf.com/v1
+metadata:
+  name: kutta-khaya-laise 
+spec:
+  name: kutta-khaya-laise-devops-111
+  duration: 3month
+  platfrom: maruf.com
+  mode: live on 

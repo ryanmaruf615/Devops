@@ -1,0 +1,39 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: devopsbatches.trainwithmaruf.com
+spec:
+  group: trainwithmaruf.com
+  scope: Namespaced
+  names:
+    plural: devopsbatches
+    singular: devopsbatch
+    kind: Devopsbatch
+    shortNames :
+      - tws
+      - junoon 
+      - batches
+  versions:
+  - name: v1
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              name:
+                type: string
+                description: "This is the name of the devops batch" 
+              duration:
+                type: string
+                description: "This is the duration of the devops batch" 
+              mode:
+                  type: string
+                  description: "this is the mode of the batch Live"
+              platfrom:
+                  type: string
+                  description: "this is the platform"     
+
